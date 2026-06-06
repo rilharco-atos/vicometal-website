@@ -96,14 +96,14 @@
                     const x = (e.clientX - rect.left) / rect.width;
                     const y = (e.clientY - rect.top) / rect.height;
                     
-                    const tiltX = (y - 0.5) * 6;
-                    const tiltY = (x - 0.5) * -6;
+                    const tiltX = (y - 0.5) * 8;
+                    const tiltY = (x - 0.5) * -8;
                     
                     card.style.transform = `perspective(1000px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) translateY(-4px)`;
                     
                     // Dynamic shine effect
                     const shine = card.querySelector('.card-shine') || this.createShine(card);
-                    shine.style.background = `radial-gradient(circle at ${x * 100}% ${y * 100}%, rgba(255,255,255,0.1) 0%, transparent 60%)`;
+                    shine.style.background = `radial-gradient(circle at ${x * 100}% ${y * 100}%, rgba(255,255,255,0.15) 0%, transparent 60%)`;
                 });
 
                 card.addEventListener('mouseleave', () => {
@@ -115,12 +115,6 @@
 
                 card.addEventListener('mouseenter', () => {
                     card.style.transition = 'none';
-                });
-
-                // Ensure links inside cards remain clickable
-                card.querySelectorAll('a').forEach(link => {
-                    link.style.position = 'relative';
-                    link.style.zIndex = '5';
                 });
             });
         }
