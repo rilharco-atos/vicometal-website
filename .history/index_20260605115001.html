@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Grupo Vicometal — Soluções industriais em metalomecânica, estruturas metálicas, montagem e manutenção. Desde 2001 em mais de 15 países.">
+  <meta name="keywords"
+    content="metalomecânica, estruturas metálicas, fabrico industrial, montagem, manutenção, soldadura, Vicometal, Soure, Portugal">
+  <title>Grupo Vicometal — Metalomecânica Industrial desde 2001</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/effects.css">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader-ring">
+      <div class="loader-ring-inner"></div>
+    </div>
+    <span class="loader-text">VICOMETAL</span>
+  </div>
+
+  <!-- Navigation -->
+  <header id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/vicometal-logo.svg" alt="Vicometal — Grupo Industrial" class="logo-img" />
+      </a>
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link active">Início</a>
+        <a href="quem-somos.html" class="nav-link">Quem Somos</a>
+        <a href="capacidades.html" class="nav-link">Capacidades</a>
+        <a href="portfolio.html" class="nav-link">Portfólio</a>
+        <a href="servicos.html" class="nav-link">Serviços</a>
+        <a href="qualidade.html" class="nav-link">Qualidade</a>
+        <a href="contactos.html" class="nav-link">Contactos</a>
+        <a href="orcamento.html" class="nav-link nav-cta">Solicitar Orçamento</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-overlay"></div>
+      <div class="hero-image" style="background-image: url('uploads/destaques/ciclone-alemanha.jpg')"></div>
+      <div class="hero-particles" id="heroParticles"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge fade-up">
+        <span class="badge-dot"></span>
+        Desde 2001 a construir o futuro industrial
+      </div>
+      <h1 class="hero-title fade-up delay-1">
+        Engenharia<br>
+        <span class="text-gradient">que transforma</span><br>
+        a indústria.
+      </h1>
+      <p class="hero-subtitle fade-up delay-2">
+        Fabrico, montagem e manutenção de estruturas e equipamentos metálicos
+        para os mais exigentes projetos industriais em 4 continentes.
+      </p>
+      <div class="hero-actions fade-up delay-3">
+        <a href="orcamento.html" class="btn btn-primary btn-lg">
+          <span>Solicitar Orçamento</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </a>
+        <a href="portfolio.html" class="btn btn-outline btn-lg">
+          <span style="color:azure">Ver Portfólio</span>
+        </a>
+      </div>
+    </div>
+    <div class="hero-stats fade-up delay-4">
+      <div class="stat-item">
+        <span class="stat-number" data-count="24">0</span>
+        <span class="stat-suffix">+</span>
+        <span class="stat-label">Anos de Experiência</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number" data-count="15">0</span>
+        <span class="stat-suffix">+</span>
+        <span class="stat-label">Países de Atuação</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number" data-count="200">0</span>
+        <span class="stat-suffix">+</span>
+        <span class="stat-label">Colaboradores</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number" data-count="40000">0</span>
+        <span class="stat-suffix">m²</span>
+        <span class="stat-label">Área Produtiva</span>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Explorar</span>
+      <div class="scroll-indicator"></div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="section services-section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag fade-up">O que fazemos</span>
+        <h2 class="section-title fade-up delay-1">Soluções integradas<br>para a indústria</h2>
+        <p class="section-desc fade-up delay-2">Do projeto à entrega — engenharia, fabrico, montagem e manutenção com a
+          qualidade que o mercado internacional exige.</p>
+      </div>
+      <div class="services-grid">
+        <article class="service-card fade-up" data-delay="0">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M6 42V18L24 6l18 12v24" />
+              <path d="M14 42V26h20v16" />
+              <path d="M20 42v-8h8v8" />
+            </svg>
+          </div>
+          <h3 class="service-title">Fabrico</h3>
+          <p class="service-desc">Estruturas metálicas, caldeiraria pesada e equipamentos industriais. Capacidade até
+            3.000 ton/mês.</p>
+          <a href="servicos.html#fabrico" class="service-link">
+            Saber mais
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </article>
+        <article class="service-card fade-up" data-delay="100">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="24" cy="24" r="8" />
+              <path
+                d="M24 4v8M24 36v8M4 24h8M36 24h8M8.93 8.93l5.66 5.66M33.41 33.41l5.66 5.66M8.93 39.07l5.66-5.66M33.41 14.59l5.66-5.66" />
+            </svg>
+          </div>
+          <h3 class="service-title">Montagem</h3>
+          <p class="service-desc">Montagem de estruturas, centrais de britagem, asfalto e betão em obra. Equipas
+            especializadas multi-país.</p>
+          <a href="servicos.html#montagem" class="service-link">
+            Saber mais
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </article>
+        <article class="service-card fade-up" data-delay="200">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M20 8h8v8h-8z" />
+              <path d="M8 32h8v8H8z" />
+              <path d="M32 32h8v8h-8z" />
+              <path d="M24 16v8M16 32l4-8M32 32l-4-8" />
+            </svg>
+          </div>
+          <h3 class="service-title">Manutenção Industrial</h3>
+          <p class="service-desc">Pessoal especializado em manutenção mecânica para celuloses, cimenteiras, siderurgias
+            e minas.</p>
+          <a href="servicos.html#manutencao" class="service-link">
+            Saber mais
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </article>
+        <article class="service-card fade-up" data-delay="300">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M6 24c0-9.94 8.06-18 18-18s18 8.06 18 18-8.06 18-18 18" />
+              <path d="M24 14v10l6 6" />
+              <path d="M6 32h8M6 38h12" />
+            </svg>
+          </div>
+          <h3 class="service-title">Soluções Chave-na-Mão</h3>
+          <p class="service-desc">Do design à entrega: engenharia integrada, fabrico, transporte, montagem e
+            comissionamento.</p>
+          <a href="servicos.html#chave-na-mao" class="service-link">
+            Saber mais
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </article>
+        <article class="service-card fade-up" data-delay="400">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 36l12-24 12 24" />
+              <path d="M16 28h16" />
+              <circle cx="24" cy="12" r="3" />
+            </svg>
+          </div>
+          <h3 class="service-title">Soldadura Especializada</h3>
+          <p class="service-desc">Processos MIG/MAG robotizados, soldadura TIG e por arco submerso com certificação EN
+            ISO 3834.</p>
+          <a href="servicos.html#soldadura" class="service-link">
+            Saber mais
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </article>
+        <article class="service-card fade-up" data-delay="500">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="8" y="8" width="32" height="32" rx="4" />
+              <path d="M16 24h16M24 16v16" />
+              <circle cx="24" cy="24" r="4" />
+            </svg>
+          </div>
+          <h3 class="service-title">Inox & Vicoinox</h3>
+          <p class="service-desc">Construção em aço inoxidável para indústrias química, farmacêutica e alimentar com
+            acabamento sanitário.</p>
+          <a href="servicos.html#inox" class="service-link">
+            Saber mais
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Capabilities Showcase -->
+  <section class="section capabilities-showcase dark-section">
+    <div class="container">
+      <div class="cap-grid">
+        <div class="cap-content fade-up">
+          <span class="section-tag">Capacidade Industrial</span>
+          <h2 class="section-title">Infraestrutura de<br><span class="text-accent">referência nacional</span></h2>
+          <p class="section-desc">40.000 m² de área produtiva equipada com tecnologia de ponta para responder aos mais
+            exigentes projetos internacionais.</p>
+          <ul class="cap-list">
+            <li>
+              <span class="cap-number">5</span>
+              <span class="cap-label">Pontes rolantes até 30 ton</span>
+            </li>
+            <li>
+              <span class="cap-number">2</span>
+              <span class="cap-label">Robots de soldadura MIG/MAG</span>
+            </li>
+            <li>
+              <span class="cap-number">200mm</span>
+              <span class="cap-label">Corte oxicorte máximo</span>
+            </li>
+            <li>
+              <span class="cap-number">3000mm</span>
+              <span class="cap-label">Calandragem chapa × 30mm</span>
+            </li>
+          </ul>
+          <a href="capacidades.html" class="btn btn-primary">
+            <span>Ver Capacidades Completas</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+        <div class="cap-visual fade-up delay-2">
+          <div class="cap-image-wrapper">
+            <div class="cap-image" style="background-image: url('assets/fabrica-interior.jpg')"></div>
+            <div class="cap-image-overlay">
+              <span class="cap-overlay-text">40.000 m²</span>
+              <span class="cap-overlay-sub">de área produtiva</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Showcase -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag fade-up">Portfólio</span>
+        <h2 class="section-title fade-up delay-1">Projetos em<br>destaque</h2>
+      </div>
+      <div class="projects-carousel">
+        <div class="projects-track" id="projectsTrack">
+          <article class="project-card fade-up">
+            <div class="project-image">
+              <img src="uploads/destaques/evaporador-quench.jpg" alt="Evaporador Quench 26 toneladas" loading="lazy">
+              <div class="project-overlay">
+                <span class="project-category">INDÚSTRIA</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Evaporador (Quench)</h3>
+              <div class="project-meta">
+                <span>26 toneladas</span>
+                <span>Espanha</span>
+                <span>2024</span>
+              </div>
+            </div>
+          </article>
+          <article class="project-card fade-up" data-delay="100">
+            <div class="project-image">
+              <img src="uploads/destaques/central-asfalto.jpg" alt="Central de fabrico de asfalto" loading="lazy">
+              <div class="project-overlay">
+                <span class="project-category">MONTAGEM</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Central de Asfalto</h3>
+              <div class="project-meta">
+                <span>Montagem completa</span>
+                <span>França</span>
+                <span>2024</span>
+              </div>
+            </div>
+          </article>
+          <article class="project-card fade-up" data-delay="200">
+            <div class="project-image">
+              <img src="uploads/destaques/ciclone-alemanha.jpg" alt="Ciclone Industrial Alemanha" loading="lazy">
+              <div class="project-overlay">
+                <span class="project-category">UNIDADE FABRIL</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Ciclone Industrial</h3>
+              <div class="project-meta">
+                <span>Grande montagem</span>
+                <span>Alemanha</span>
+                <span>2023</span>
+              </div>
+            </div>
+          </article>
+          <article class="project-card fade-up" data-delay="300">
+            <div class="project-image">
+              <img src="uploads/destaques/soldadura-mig-mag.jpg" alt="Soldadura MIG MAG robotizada" loading="lazy">
+              <div class="project-overlay">
+                <span class="project-category">FABRICO</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Soldadura MIG/MAG Robotizada</h3>
+              <div class="project-meta">
+                <span>Processo automatizado</span>
+                <span>Soure</span>
+                <span>2024</span>
+              </div>
+            </div>
+          </article>
+          <article class="project-card fade-up" data-delay="400">
+            <div class="project-image">
+              <img src="uploads/destaques/transportadores-galeria.jpg" alt="Transportadores em galeria" loading="lazy">
+              <div class="project-overlay">
+                <span class="project-category">MONTAGEM</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Transportadores em Galeria</h3>
+              <div class="project-meta">
+                <span>Parque de madeiras</span>
+                <span>Portugal</span>
+                <span>2023</span>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="carousel-controls">
+          <button class="carousel-btn carousel-prev" id="projectsPrev" aria-label="Anterior">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M19 12H5M12 19l-7-7 7-7" />
+            </svg>
+          </button>
+          <button class="carousel-btn carousel-next" id="projectsNext" aria-label="Seguinte">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="section-cta fade-up">
+        <a href="portfolio.html" class="btn btn-outline">Ver todos os projetos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- World Map / Global Presence -->
+  <section class="section map-section dark-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag fade-up">Presença Global</span>
+        <h2 class="section-title fade-up delay-1">Projetos em<br><span class="text-accent">4 continentes</span></h2>
+        <p class="section-desc fade-up delay-2">Da Europa à América do Sul e África, levamos engenharia portuguesa aos
+          mais exigentes mercados internacionais.</p>
+      </div>
+      <div class="world-map fade-up delay-3">
+        <div class="map-container" id="worldMap">
+          <svg viewBox="0 0 1000 500" class="map-svg" id="mapSvg">
+            <!-- Simplified world map paths -->
+            <g class="map-continents" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.15)" stroke-width="0.5">
+              <!-- Europe -->
+              <path
+                d="M450,80 L520,75 L540,90 L560,85 L570,100 L555,120 L540,125 L530,140 L510,145 L500,135 L480,140 L465,130 L455,115 L460,100 Z" />
+              <!-- Africa -->
+              <path
+                d="M440,180 L480,175 L510,185 L520,210 L530,250 L520,290 L500,320 L480,330 L460,320 L445,290 L440,250 L450,210 Z" />
+              <!-- South America -->
+              <path
+                d="M250,220 L280,210 L310,220 L320,250 L315,290 L300,330 L280,370 L265,380 L255,360 L240,320 L235,280 L240,250 Z" />
+              <!-- Iberian Peninsula -->
+              <path d="M430,120 L460,115 L470,125 L465,140 L450,150 L435,145 L425,135 Z" />
+            </g>
+            <!-- Project pins -->
+            <g class="map-pins">
+              <circle cx="445" cy="138" r="6" class="map-pin pin-active" data-country="Portugal"
+                data-projects="Base operacional" />
+              <circle cx="460" cy="128" r="5" class="map-pin" data-country="Espanha"
+                data-projects="Montagens industriais" />
+              <circle cx="475" cy="108" r="5" class="map-pin" data-country="França"
+                data-projects="Central de asfalto" />
+              <circle cx="500" cy="100" r="5" class="map-pin" data-country="Alemanha"
+                data-projects="Ciclones industriais" />
+              <circle cx="530" cy="82" r="4" class="map-pin" data-country="Finlândia" data-projects="Biomassa" />
+              <circle cx="270" cy="280" r="4" class="map-pin" data-country="Brasil"
+                data-projects="Estruturas industriais" />
+              <circle cx="475" cy="250" r="4" class="map-pin" data-country="Angola"
+                data-projects="Manutenção industrial" />
+              <circle cx="465" cy="220" r="4" class="map-pin" data-country="Marrocos" data-projects="Cimenteiras" />
+            </g>
+          </svg>
+          <div class="map-tooltip" id="mapTooltip"></div>
+        </div>
+        <div class="map-legend">
+          <div class="legend-item">
+            <span class="legend-dot active"></span>
+            <span>Sede — Portugal</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-dot"></span>
+            <span>Projetos internacionais</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sectors -->
+  <section class="section sectors-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag fade-up">Sectores</span>
+        <h2 class="section-title fade-up delay-1">Indústrias<br>que servimos</h2>
+      </div>
+      <div class="sectors-grid">
+        <div class="sector-item fade-up" data-delay="0">
+          <div class="sector-icon">🏭</div>
+          <span>Celuloses</span>
+        </div>
+        <div class="sector-item fade-up" data-delay="50">
+          <div class="sector-icon">⚙️</div>
+          <span>Cimenteiras & Cal</span>
+        </div>
+        <div class="sector-item fade-up" data-delay="100">
+          <div class="sector-icon">🔥</div>
+          <span>Argilas & Cerâmicas</span>
+        </div>
+        <div class="sector-item fade-up" data-delay="150">
+          <div class="sector-icon">🏗️</div>
+          <span>Siderurgias & Fundições</span>
+        </div>
+        <div class="sector-item fade-up" data-delay="200">
+          <div class="sector-icon">⛏️</div>
+          <span>Minas</span>
+        </div>
+        <div class="sector-item fade-up" data-delay="250">
+          <div class="sector-icon">🧪</div>
+          <span>Química & Farmacêutica</span>
+        </div>
+        <div class="sector-item fade-up" data-delay="300">
+          <div class="sector-icon">🍃</div>
+          <span>Biomassa & Energia</span>
+        </div>
+        <div class="sector-item fade-up" data-delay="350">
+          <div class="sector-icon">🥫</div>
+          <span>Alimentar</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / Quote Request -->
+  <section class="section cta-section">
+    <div class="cta-bg"></div>
+    <div class="container">
+      <div class="cta-content fade-up">
+        <h2 class="cta-title">Tem um projeto industrial?</h2>
+        <p class="cta-desc">Solicite um orçamento técnico. Aceita upload de desenhos PDF, DWG, STEP e cadernos de
+          encargos.</p>
+        <div class="cta-actions">
+          <a href="orcamento.html" class="btn btn-primary btn-lg">
+            <span>Pedir Orçamento Técnico</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="tel:+351239644616" class="btn btn-ghost btn-lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+            </svg>
+            <span>(+351) 239 644 616</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News Section -->
+  <section class="section news-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag fade-up">Notícias</span>
+        <h2 class="section-title fade-up delay-1">Últimas novidades</h2>
+      </div>
+      <div class="news-grid">
+        <article class="news-card fade-up">
+          <div class="news-image">
+            <img src="uploads/destaques/evaporador-quench.jpg" alt="Evaporador Quench" loading="lazy">
+            <span class="news-date">08 NOV 2024</span>
+          </div>
+          <div class="news-content">
+            <h3>Evaporador (Quench) fabricado na Vicometal</h3>
+            <p>Equipamento de 26 toneladas fabricado nas nossas instalações para projeto industrial em Espanha.</p>
+            <a href="#" class="news-link">Ler mais →</a>
+          </div>
+        </article>
+        <article class="news-card fade-up" data-delay="100">
+          <div class="news-image">
+            <img src="uploads/destaques/central-asfalto.jpg" alt="Central de Asfalto" loading="lazy">
+            <span class="news-date">03 ABR 2024</span>
+          </div>
+          <div class="news-content">
+            <h3>Grande montagem em França — Central de Asfalto</h3>
+            <p>Montagem completa de central de fabrico de asfalto em França, demonstrando a capacidade internacional.
+            </p>
+            <a href="#" class="news-link">Ler mais →</a>
+          </div>
+        </article>
+        <article class="news-card fade-up" data-delay="200">
+          <div class="news-image">
+            <img src="uploads/destaques/soldadura-mig-mag.jpg" alt="Soldadura robotizada" loading="lazy">
+            <span class="news-date">05 FEV 2024</span>
+          </div>
+          <div class="news-content">
+            <h3>Processo de soldadura MIG/MAG robotizado</h3>
+            <p>Investimento contínuo em automação com novo robot de soldadura para maior precisão e produtividade.</p>
+            <a href="#" class="news-link">Ler mais →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Group Companies -->
+  <section class="section group-section dark-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag fade-up">Grupo</span>
+        <h2 class="section-title fade-up delay-1">Empresas do Grupo Vicometal</h2>
+      </div>
+      <div class="group-grid fade-up delay-2">
+        <div class="group-card">
+          <h3>Vieira Cordeiro, S.A.</h3>
+          <p>Fabrico e montagem de estruturas e equipamentos metalomecânicos.</p>
+          <span class="group-location">Soure, Portugal</span>
+        </div>
+        <div class="group-card">
+          <h3>Pormenorvirtual, S.A.</h3>
+          <p>Projeto mecânico, engenharia e desenvolvimento de produto.</p>
+          <span class="group-location">Portugal</span>
+        </div>
+        <div class="group-card">
+          <h3>Vicometal Montajes, S.L.</h3>
+          <p>Operações de montagem em Espanha e mercado europeu.</p>
+          <span class="group-location">Espanha</span>
+        </div>
+        <div class="group-card">
+          <h3>Vicoinox, S.A.</h3>
+          <p>Fabrico em aço inoxidável para indústria alimentar e química.</p>
+          <span class="group-location">Portugal</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="index.html" class="footer-logo">
+              <img src="assets/vicometal-logo.svg" alt="Vicometal" class="logo-img" />
+            </a>
+            <p class="footer-desc">Desde 2001 a fornecer soluções de engenharia e metalomecânica para os mais exigentes
+              projetos industriais em 4 continentes.</p>
+            <div class="footer-social">
+              <a href="https://www.facebook.com/vicometal" target="_blank" rel="noopener" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/company/vicometal" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z" />
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/vicometal" target="_blank" rel="noopener" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="2" width="20" height="20" rx="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer-nav">
+            <h4>Navegação</h4>
+            <ul>
+              <li><a href="quem-somos.html">Quem Somos</a></li>
+              <li><a href="capacidades.html">Capacidades</a></li>
+              <li><a href="portfolio.html">Portfólio</a></li>
+              <li><a href="servicos.html">Serviços</a></li>
+              <li><a href="qualidade.html">Qualidade</a></li>
+              <li><a href="downloads.html">Downloads</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav">
+            <h4>Serviços</h4>
+            <ul>
+              <li><a href="servicos.html#fabrico">Fabrico</a></li>
+              <li><a href="servicos.html#montagem">Montagem</a></li>
+              <li><a href="servicos.html#manutencao">Manutenção Industrial</a></li>
+              <li><a href="servicos.html#soldadura">Soldadura</a></li>
+              <li><a href="servicos.html#inox">Inox & Vicoinox</a></li>
+              <li><a href="servicos.html#chave-na-mao">Chave-na-Mão</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h4>Contactos</h4>
+            <ul class="contact-list">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                <span>Barroco, 3130-400<br>Vila Nova de Anços · Soure</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+                </svg>
+                <a href="tel:+351239644616">(+351) 239 644 616</a>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <path d="M22 6l-10 7L2 6" />
+                </svg>
+                <a href="mailto:vicometal@vicometal.pt">vicometal@vicometal.pt</a>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <path
+                    d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" />
+                </svg>
+                <span>N 40° 07' 19.68" W 8° 35' 52.50"</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom-content">
+          <p>&copy; 2025 Vicometal — Vieira Cordeiro, S.A. · Todos os direitos reservados.</p>
+          <div class="footer-links">
+            <a href="https://www.livroreclamacoes.pt" target="_blank" rel="noopener" class="footer-complaints">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+                <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" />
+              </svg>
+              Livro de Reclamações
+            </a>
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Termos de Utilização</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cookie Consent -->
+  <div class="cookie-banner" id="cookieBanner">
+    <div class="cookie-content">
+      <p>Utilizamos cookies para melhorar a sua experiência. Ao continuar a navegar, concorda com a nossa <a
+          href="#">política de cookies</a>.</p>
+      <div class="cookie-actions">
+        <button class="btn btn-sm btn-outline" id="cookieReject">Rejeitar</button>
+        <button class="btn btn-sm btn-primary" id="cookieAccept">Aceitar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- AI Chatbot Assistant -->
+  <div class="chatbot" id="chatbot">
+    <button class="chatbot-toggle" id="chatbotToggle" aria-label="Assistente Virtual">
+      <svg class="chatbot-icon-open" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+        stroke-width="2">
+        <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+      </svg>
+      <svg class="chatbot-icon-close" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+        stroke-width="2">
+        <path d="M18 6L6 18M6 6l12 12" />
+      </svg>
+      <span class="chatbot-badge">1</span>
+    </button>
+    <div class="chatbot-window" id="chatbotWindow">
+      <div class="chatbot-header">
+        <div class="chatbot-header-info">
+          <div class="chatbot-avatar">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="11" width="18" height="10" rx="2" />
+              <circle cx="12" cy="5" r="4" />
+              <circle cx="9" cy="15" r="1" fill="currentColor" />
+              <circle cx="15" cy="15" r="1" fill="currentColor" />
+              <path d="M9 18h6" />
+            </svg>
+          </div>
+          <div>
+            <span class="chatbot-name">Assistente Vicometal</span>
+            <span class="chatbot-status">Online — Resposta imediata</span>
+          </div>
+        </div>
+        <button class="chatbot-close" id="chatbotClose" aria-label="Fechar">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 6L6 18M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <div class="chatbot-messages" id="chatbotMessages">
+        <div class="chat-message bot">
+          <div class="chat-bubble">
+            <p>Olá! 👋 Sou o assistente virtual da Vicometal.</p>
+            <p>Posso ajudá-lo com informações sobre os nossos serviços, capacidades, orçamentos ou qualquer outra
+              questão.</p>
+            <p>Como posso ajudar?</p>
+          </div>
+        </div>
+      </div>
+      <div class="chatbot-suggestions" id="chatbotSuggestions">
+        <button class="suggestion-btn" data-question="Que serviços oferecem?">Serviços</button>
+        <button class="suggestion-btn" data-question="Como posso pedir um orçamento?">Orçamento</button>
+        <button class="suggestion-btn" data-question="Onde estão localizados?">Localização</button>
+        <button class="suggestion-btn" data-question="Quais as vossas certificações?">Certificações</button>
+      </div>
+      <form class="chatbot-input" id="chatbotForm">
+        <input type="text" id="chatbotInput" placeholder="Escreva a sua mensagem..." autocomplete="off">
+        <button type="submit" aria-label="Enviar">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+          </svg>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M18 15l-6-6-6 6" />
+    </svg>
+  </button>
+
+  <script src="js/main.js"></script>
+  <script src="js/effects.js"></script>
+  <script src="js/chatbot.js"></script>
+</body>
+
+</html>

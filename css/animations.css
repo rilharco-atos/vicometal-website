@@ -1,0 +1,198 @@
+/* ============================================
+   VICOMETAL — Scroll & Entrance Animations
+   ============================================ */
+
+/* --- Fade Up --- */
+.fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+                transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-up.delay-1 { transition-delay: 0.1s; }
+.fade-up.delay-2 { transition-delay: 0.2s; }
+.fade-up.delay-3 { transition-delay: 0.3s; }
+.fade-up.delay-4 { transition-delay: 0.4s; }
+
+/* --- Fade In --- */
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.7s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+
+/* --- Scale In --- */
+.scale-in {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.scale-in.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* --- Slide Left --- */
+.slide-left {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.slide-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* --- Slide Right --- */
+.slide-right {
+    opacity: 0;
+    transform: translateX(40px);
+    transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.slide-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* --- Stagger children --- */
+[data-delay="50"] { transition-delay: 50ms !important; }
+[data-delay="100"] { transition-delay: 100ms !important; }
+[data-delay="150"] { transition-delay: 150ms !important; }
+[data-delay="200"] { transition-delay: 200ms !important; }
+[data-delay="250"] { transition-delay: 250ms !important; }
+[data-delay="300"] { transition-delay: 300ms !important; }
+[data-delay="350"] { transition-delay: 350ms !important; }
+[data-delay="400"] { transition-delay: 400ms !important; }
+[data-delay="500"] { transition-delay: 500ms !important; }
+
+/* --- Parallax effect --- */
+.parallax-slow {
+    will-change: transform;
+}
+
+/* --- Counter animation tick --- */
+@keyframes countUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Hero particles --- */
+.particle {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    animation: particleFloat linear infinite;
+}
+
+@keyframes particleFloat {
+    0% {
+        transform: translateY(0) translateX(0);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh) translateX(50px);
+        opacity: 0;
+    }
+}
+
+/* --- Hover lift --- */
+.hover-lift {
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.hover-lift:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* --- Loading skeleton shimmer --- */
+@keyframes shimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+.skeleton {
+    background: linear-gradient(90deg, 
+        var(--color-surface-alt) 25%, 
+        var(--color-border-light) 50%, 
+        var(--color-surface-alt) 75%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    border-radius: var(--radius-sm);
+}
+
+/* --- Image reveal --- */
+.img-reveal {
+    position: relative;
+    overflow: hidden;
+}
+
+.img-reveal::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--color-primary);
+    transform-origin: left;
+    transition: transform 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.img-reveal.visible::after {
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+/* --- Magnetic effect for buttons --- */
+.magnetic {
+    transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* --- Smooth page transitions --- */
+.page-transition-enter {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.page-transition-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.5s ease;
+}
+
+/* --- Number counter rolling effect --- */
+.counter-rolling {
+    display: inline-block;
+    overflow: hidden;
+    height: 1em;
+    line-height: 1;
+}
+
+.counter-rolling span {
+    display: inline-block;
+    animation: counterRoll 0.3s ease forwards;
+}
+
+@keyframes counterRoll {
+    from { transform: translateY(100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
