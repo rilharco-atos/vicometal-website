@@ -2,19 +2,19 @@
    VICOMETAL — Scroll & Entrance Animations
    ============================================ */
 
-/* --- Fade Up --- */
+/* --- Fade Up (Liquid Glass entrance) --- */
 .fade-up {
     opacity: 0;
-    transform: translateY(40px);
-    filter: blur(4px);
+    transform: translateY(40px) scale(0.98);
+    filter: blur(6px);
     transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
                 transform 0.8s cubic-bezier(0.22, 1, 0.36, 1),
-                filter 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+                filter 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .fade-up.visible {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
     filter: blur(0);
 }
 
@@ -49,28 +49,36 @@
     filter: blur(0);
 }
 
-/* --- Slide Left --- */
+/* --- Slide Left (Liquid Glass) --- */
 .slide-left {
     opacity: 0;
-    transform: translateX(-40px);
-    transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+    transform: translateX(-50px) scale(0.97);
+    filter: blur(4px);
+    transition: opacity 0.8s ease-out, 
+                transform 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+                filter 0.6s ease-out;
 }
 
 .slide-left.visible {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateX(0) scale(1);
+    filter: blur(0);
 }
 
-/* --- Slide Right --- */
+/* --- Slide Right (Liquid Glass) --- */
 .slide-right {
     opacity: 0;
-    transform: translateX(40px);
-    transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+    transform: translateX(50px) scale(0.97);
+    filter: blur(4px);
+    transition: opacity 0.8s ease-out, 
+                transform 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+                filter 0.6s ease-out;
 }
 
 .slide-right.visible {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateX(0) scale(1);
+    filter: blur(0);
 }
 
 /* --- Stagger children --- */
